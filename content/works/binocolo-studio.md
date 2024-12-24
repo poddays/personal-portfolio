@@ -5,7 +5,7 @@ customer: Binocolo Studio
 description: Agenzia video di Milano, hanno avuto la necessità di mostrare i loro lavori con ferrari, D&G, Tom Ford in un sito web che mettesse in primo piano i loro lavori con una estetica minimale...
 workLink: 
 websiteLink: https://binocolostudio.com
-videoLink: /video/works/binocolo-studio.mp4
+videoLink: /video/works/binocolo.mp4
 technologies:  
  - Wordpress
  - Javscript
