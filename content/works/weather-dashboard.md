@@ -35,7 +35,7 @@ technologies:
 
 ## Soluzione Personale:
 
-Per soddisfare i requisiti di animazione fluida e reattività, ho scelto di utilizzare la libreria &#x2A;*GSAP (GreenSock Animation Platform)**. GSAP offre un controllo preciso sulle animazioni e consente di creare effetti di transizione complessi con facilità.
+Per soddisfare i requisiti di animazione fluida e reattività, ho scelto di utilizzare la libreria \*\*GSAP (GreenSock Animation Platform)\*\*. GSAP offre un controllo preciso sulle animazioni e consente di creare effetti di transizione complessi con facilità.
 
 **Esempi di animazioni implementate con GSAP:**
 
