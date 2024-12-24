@@ -16,7 +16,7 @@ technologies:
   - Gsap
 ---
 
-# Weather Dashboard
+
 
 ## Heading 2
 
