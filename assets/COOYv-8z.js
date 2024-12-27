@@ -1,1 +1,0 @@
-import{o as s,c as o,a as t}from"./BhNuExVH.js";const r={class:"mx-12"},a=["src"],i={__name:"VideoContainer",props:{src:{type:String,required:!0}},setup(e){return(c,l)=>(s(),o("div",r,[t("video",{src:e.src,autoplay:"",loop:"",muted:"",playsinline:"",class:"rounded-xl h-full w-full"},null,8,a)]))}};export{i as default};
