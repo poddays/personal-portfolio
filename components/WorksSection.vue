@@ -11,7 +11,7 @@ const { data: works } = await useAsyncData('works', () =>
 </script>
 
 <template>
-  <div class="flex flex-col gap-8 my-12">
+  <div class="flex flex-col gap-8 my-[15vh] lg:my-12">
     <WorkCard v-for="work in works" :key="work._id" :work="work" />
   </div>
 </template>

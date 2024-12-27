@@ -26,7 +26,7 @@
         </div>
 
         <!-- Link -->
-        <div class="grid grid-cols-3 lg:self-start w-[300px] justify-center text-white my-12 lg:justify-start">
+        <div class="grid grid-cols-3 grid-rows-1 lg:self-start w-[300px] justify-center text-white my-12 lg:justify-start">
             <a v-for="link in links" :key="link.name" :href="link.href"
                 class="text-white flex flex-col items-center gap-2 group">
                 <Icon :name="link.icon"
