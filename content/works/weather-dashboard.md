@@ -4,7 +4,7 @@ date: 01/02/2024
 description: Piccola esercitazione di stile, integrare un api del meteo e
   visualizzarlo con un design moderno ed accattivante..
 customer: Personal Project
-workLink: /works/weather-dashboard
+workLink: 
 websiteLink: https://weather-dashboard-lilac.vercel.app/
 videoLink: /video/works/weather-dashboard.mp4
 technologies:

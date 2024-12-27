@@ -16,7 +16,9 @@
            <HexRotating/>
         </div>
 
-       
+       <div class="fixed bottom-0 right-0 p-4 opacity-50" >
+        <p class="text-gray-600 text-light">Portfolio still under development</p>
+       </div>
         
         <div class="bg-gradient-to-b from-transparent to-[#00000] fixed bottom-0 h-[4vh] w-full z-50"></div>
     </div>

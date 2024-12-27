@@ -16,18 +16,17 @@
             <!-- Paragrafo introduttivo -->
             <div class="pt-4">
                 <p class="text-base text-wrap lg:text-sm font-light tracking-wider text-[#dbdbdb]">
-                    Questo è il mio portfolio e questo è un testo di prova, qui scrivo una piccola introduzione e potrà
-                    essere modificata dinamicamente in una pagina esterna.
+                    Sviluppatore e web designer, progetto e realizzo esperienze digitali incentrate sull'utente. <br> <br>  Combino  competenze tecniche e  creatività per  offrire soluzioni  efficaci e innovative.  La mia  priorità è  creare  interfacce intuitive e  coinvolgenti,  con  un'attenzione  particolare all'UX design e all'utilizzo di framework moderni.  
                 </p>
             </div>
             <div class="text-emerald-500 hover:text-emerald-400 duration-200 lg:self-start mt-7 ">
                 <a class="flex flex-row gap-1" href="/CV-Giovanni-Podda.pdf" target="_blank"><span
-                        class="hidden lg:block">━</span> Visualizza Curriculum</a>
+                        class="hidden lg:block">━</span> Scarica Curriculum</a>
             </div>
         </div>
 
         <!-- Link -->
-        <div class="grid grid-cols-4 lg:self-start w-[300px] justify-center text-white my-12 lg:justify-start">
+        <div class="grid grid-cols-3 lg:self-start w-[300px] justify-center text-white my-12 lg:justify-start">
             <a v-for="link in links" :key="link.name" :href="link.href"
                 class="text-white flex flex-col items-center gap-2 group">
                 <Icon :name="link.icon"
@@ -40,7 +39,6 @@
             </a>
         </div>
     </section>
-
 </template>
 
 

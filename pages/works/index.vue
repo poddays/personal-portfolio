@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 const { data: works } = await useAsyncData('works', () =>
     queryContent('/works').find()
 )
@@ -11,4 +11,9 @@ const { data: works } = await useAsyncData('works', () =>
         <WorksSection />
     </div>
     
+</template> -->
+
+
+<template>
+    coming soon...
 </template>
