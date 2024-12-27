@@ -1,4 +1,8 @@
 export default defineNuxtConfig({
+  app:{
+    baseURL:'/personal-portfolio',
+    buildAssetsDir: 'assets'
+  },
   devtools: { enabled: false },
   modules: [
     '@nuxtjs/tailwindcss',
