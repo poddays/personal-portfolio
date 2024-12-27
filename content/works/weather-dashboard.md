@@ -17,14 +17,13 @@ technologies:
 
 # Weather Dashboard
 ::::TheProblem
-Piccola esercitazione di stile, integrare un api del meteo e
-visualizzarlo con un design moderno ed accattivante..
-
+  Piccola esercitazione di stile, integrare un api del meteo e
+  visualizzarlo con un design moderno ed accattivante..
 ::::
 
 
 
-<VideoContainer src="/video/works/weather-dashboard.mp4" />
+<VideoContainer  src="/video/works/weather-dashboard.mp4" />
 
 
 ![clear weather](/img/works/weather-dashboard/clear-weather.png)

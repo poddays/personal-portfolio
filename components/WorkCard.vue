@@ -1,40 +1,56 @@
 <template>
-    <div class="flex flex-row items-center text-white gap-3">
+    <div class="flex flex-row items-center mx-2 justify-center text-white gap-3 self-center px-4">
+        <!-- Data visibile solo da md in poi -->
         <h3 class="text-sm text-nowrap capitalize text-gray-400 hidden md:block">
             {{ formattedDate }} —
         </h3>
-        <div class="min-h-[600px] h-[71vh] max-w-[100%] w-[570px] rounded-3xl border border-gray-700 bg-[#141414] relative overflow-hidden">
-            <div class="lg:h-[55%]">
+
+        <!-- Contenitore principale -->
+        <div
+            class=" min-h-[540px] md:h-[71vh] lg:min-h-[700px] max-h-[800px] max-w-[430px] md:w-[520px] md:min-w-[580px] lg:min-w-[480px]  rounded-3xl border border-gray-700 bg-transparent relative overflow-hidden">
+            <!-- Sezione video -->
+            <div class="h-[50%] md:h-[55%]">
                 <video class="w-full h-full object-cover" muted loop :src="work.videoLink" autoplay></video>
             </div>
-            <div class="absolute bottom-0 left-0 w-full p-4 custom-gradient h-full flex flex-col justify-end">
-                <div class="h-[48%] w-full flex flex-col justify-between px-2">
+
+            <!-- Contenitore testo -->
+            <div class="absolute bottom-0 left-0 w-full p-4 custom-gradient flex flex-col justify-end h-full">
+                <!-- Testo principale -->
+                <div class="h-[60%] md:h-[48%] w-full flex flex-col justify-between px-2">
+                    <!-- Titolo e cliente -->
                     <div>
                         <div class="flex flex-col justify-between capitalize">
-                            <h2 class="text-white text-3xl font-bold">{{ work.title }}</h2>
+                            <h2 class="text-white text-xl md:text-3xl font-bold">
+                                {{ work.title }}
+                            </h2>
                             <div class="flex flex-row items-center gap-2">
                                 <p class="text-gray-400 font-light text-xs">{{ work.customer }}</p>
-                                <span class="text-gray-400 font-light text-xs md:hidden">— {{ work.month }} {{ work.year
-                                    }}</span>
+                                <span class="text-gray-400 font-light text-xs md:hidden">
+                                    — {{ formattedDate }}
+                                </span>
                             </div>
                         </div>
 
-                        <div class="h-[100%] w-5/6">
-                            <p class="text-wrap text-white text-sm font-light mt-1">
+                        <!-- Descrizione e tecnologie -->
+                        <div class="w-full md:w-5/6">
+                            <p class="text-wrap text-gray-100 text-sm font-light mt-1">
                                 {{ work.description }}
                             </p>
-                            <div class="flex flex-row items-center gap-2 mt-4">
+                            <!-- Griglia per le capsule -->
+                            <div class="grid grid-cols-3 gap-4 mt-4">
                                 <span v-for="tech in technologies" :key="tech"
-                                    class="px-2.5 py-0.5 rounded-full text-xs"
-                                    :class="['bg-white/10', `capsule-${dominantTechnology}`]">
+                                    class="text-xs px-4.5 py-0.5 rounded-full bg-white/10 text-center"
+                                    :class="`capsule-${dominantTechnology}`">
                                     {{ tech }}
                                 </span>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Link -->
                     <div>
                         <div class="h-px bg-gray-800 my-4"></div>
-                        <div class="flex flex-row justify-center gap-16">
+                        <div class="flex flex-row justify-around md:flex-row  md:gap-16">
                             <a v-if="work.workLink" :href="work.workLink"
                                 class="text-gray-200 hover:underline flex flex-row gap-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
@@ -56,11 +72,14 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Sfera luminosa -->
                 <div class="sphere-light" :class="`sphere-light--${dominantTechnology}`"></div>
             </div>
         </div>
     </div>
 </template>
+
 
 <script lang="ts">
 import { defineComponent } from 'vue';
@@ -118,10 +137,21 @@ export default defineComponent({
 <style>
 .custom-gradient {
     background: linear-gradient(to top,
-            rgb(20, 20, 20) 0%,
-            rgb(20, 20, 20) 48%,
-            rgba(0, 0, 0, 0.199) 60%,
-            rgba(20, 20, 20, 0) 100%);
+            rgb(12, 15, 24) 0%,
+            rgb(12, 15, 24) 48%,
+            rgba(12, 15, 24, 0.199) 60%,
+            rgba(12, 15, 24, 0) 100%);
+}
+
+/* Gradiente per dispositivi mobili */
+@media (max-width: 768px) {
+    .custom-gradient {
+        background: linear-gradient(to top,
+                rgb(20, 20, 20) 0%,
+                rgb(20, 20, 20) 20%,
+                rgba(0, 0, 0, 0.7) 55%,
+                rgba(20, 20, 20, 0) 100%);
+    }
 }
 
 .capsule-angular {

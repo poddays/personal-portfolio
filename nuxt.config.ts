@@ -1,6 +1,11 @@
 export default defineNuxtConfig({
-  devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/icon', '@nuxt/content'],
+  devtools: { enabled: false },
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxt/icon',
+    '@nuxt/content',
+    '@tresjs/nuxt'
+  ],
 
   content: {
     highlight: {

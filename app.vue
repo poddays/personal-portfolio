@@ -1,9 +1,16 @@
 <template>
-    <div class="flex flex-col min-h-screen bg-[#141414]  ">
-        <main>
-            <NuxtPage />
-        </main>
+    <div>
+        <div
+            class="flex flex-col min-h-screen bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-900  to-black">
+            <main>
+                <NuxtPage />
+                <GLight />
+            </main>
+        </div>
+        <SiteFooter />
     </div>
-    <SiteFooter/>
-    
 </template>
+
+<script>
+
+</script>
