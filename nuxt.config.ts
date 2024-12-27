@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   app:{
-    baseURL:'/personal-portfolio'
+    baseURL:'/'
   },
   devtools: { enabled: false },
   modules: [
