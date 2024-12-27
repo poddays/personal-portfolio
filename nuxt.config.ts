@@ -16,6 +16,7 @@ export default defineNuxtConfig({
       preload: ['ts', 'js', 'css' , 'json', 'bash', 'vue']
     }
   },
+  
 
   compatibilityDate: '2024-12-22'
 })
